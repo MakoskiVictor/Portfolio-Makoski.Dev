@@ -1,10 +1,33 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import NavBar from "@components/NavBar.astro"
+/* import Layout from "../layouts/Layout.astro"; */
+import Layout from "@layouts/Layout.astro";
 ---
 
-<Layout title='Welcome to Astro.'>
-  <main class=''>
-    <h1>Porfolio</h1>
+<Layout title='Welcome to my Portfolio'>
+  <main>
+    <NavBar />
+    <nav class="text-gray-400">
+      <div >
+        Makoski Víctor
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Portfolio</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </main>
 </Layout>
 
