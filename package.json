@@ -19,16 +19,16 @@
 	},
 	"eslintConfig": {
 		"extends": [
-		  "standard",
-		  "plugin:astro/recomended"
+			"standard",
+			"plugin:astro/recomended"
 		]
-	  },
-	  "overrides": [
+	},
+	"overrides": [
 		{
-		  "files": [
-			"*.astro"
-		  ],
-		  "parser": "astro-eslint-parser"
+			"files": [
+				"*.astro"
+			],
+			"parser": "astro-eslint-parser"
 		}
-	  ]
+	]
 }
