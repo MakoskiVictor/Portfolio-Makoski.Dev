@@ -1,18 +1,19 @@
 ---
 import NavBar from "@components/NavBar.astro"
-/* import Layout from "../layouts/Layout.astro"; */
-import Layout from "@layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro"
+import GitHubLogo from "@public/Logos/GitHubLogo.svg"
+import LinkedInLogo from "@public/Logos/LinkedInLogo.svg"
 ---
 
-<Layout title='Welcome to my Portfolio'>
+<Layout title='Portfolio Makoski'>
   <main>
-    <NavBar />
-    <nav class="text-gray-400">
+    <div class="flex flex-col h-full gap-4">
+    <nav class="flex items-center w-screen p-8 gap-x-8 text-gray-400">
       <div >
-        Makoski Víctor
+        <a href="#">Makoski Víctor</a>
       </div>
-      <div>
-        <ul>
+      <nav class="flex invisible w-0 sm:visible sm:w-auto">
+        <ul class="flex columns-4 gap-x-4">
           <li>
             <a href="">Home</a>
           </li>
@@ -26,8 +27,19 @@ import Layout from "@layouts/Layout.astro";
             <a href="">Contact</a>
           </li>
         </ul>
+      </nav>
+      <div>
+        <ul class="flex columns-2 gap-x-4">
+          <li class="bg-neutral-400 rounded-full w-10  h-10">
+            <a href="#"><img src={GitHubLogo} alt="GitHub Logo"></a>
+          </li>
+          <li >
+            <a href="#"><img src={LinkedInLogo} alt="LinkedIn Logo" class="bg-neutral-400 rounded-full w-10 h-10"></a>
+          </li>
+        </ul>
       </div>
     </nav>
+  </div>
   </main>
 </Layout>
 
