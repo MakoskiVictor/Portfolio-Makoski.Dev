@@ -1,0 +1,65 @@
+.NavBar {
+    color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    column-gap: 50px;
+}
+
+img {
+    width: 35px;
+    height: 35px;
+}
+
+.makoski {
+    font-family: 'Tilt Warp', cursive;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.NavButtons {
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.socials {
+    background-color: transparent;
+}
+
+.socialsLogo {
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+li:hover {
+    scale: 1.2;
+    transition: 0.4s;
+}
+p:hover {
+    color: rgb(167, 13, 13);
+    transition: 0.3s;
+}
+img:hover {
+    background-color: rgb(167, 13, 13);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 720px) {
+    .NavButtons {
+        visibility: hidden;
+        min-width: 0px;
+        width: 0px;
+    }
+}
