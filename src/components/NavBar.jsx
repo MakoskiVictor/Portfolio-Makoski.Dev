@@ -9,27 +9,27 @@ export function NavBar () {
         <a href='NavBar'>Makoski Víctor</a>
       </nav>
       <nav className={NavBarStyle.NavButtons}>
-        <ul>
-          <li>
-            <a href='#'><p>Home</p></a>
+        <ul className={NavBarStyle.ulNav}>
+          <li className={NavBarStyle.liNav}>
+            <a href='#'><p className={NavBarStyle.pNav}>Home</p></a>
           </li>
-          <li>
-            <a href='#'><p>About</p></a>
+          <li className={NavBarStyle.liNav}>
+            <a href='#'><p className={NavBarStyle.pNav}>About</p></a>
           </li>
-          <li>
-            <a href='#'><p>Portfolio</p></a>
+          <li className={NavBarStyle.liNav}>
+            <a href='#'><p className={NavBarStyle.pNav}>Portfolio</p></a>
           </li>
-          <li>
-            <a href='#'><p>Contact</p></a>
+          <li className={NavBarStyle.liNav}>
+            <a href='#'><p className={NavBarStyle.pNav}>Contact</p></a>
           </li>
         </ul>
       </nav>
       <nav className={NavBarStyle.socials}>
-        <ul>
+        <ul className={NavBarStyle.ulNav}>
           <li className={NavBarStyle.socialsLogo}>
-            <a href='https://github.com/MakoskiVictor'><img src={GithubLogo} alt='GitHub Logo' /></a>
+            <a href='https://github.com/MakoskiVictor'><img src={GithubLogo} alt='GitHub Logo' className={NavBarStyle.imgNav} /></a>
           </li>
-          <li className={NavBarStyle.socialsLogo}><a href='https://www.linkedin.com/in/makoskidev/'><img src={LinkedinLogo} alt='LinkedIn Logo' /></a></li>
+          <li className={NavBarStyle.socialsLogo}><a href='https://www.linkedin.com/in/makoskidev/'><img src={LinkedinLogo} alt='LinkedIn Logo' className={NavBarStyle.imgNav} /></a></li>
         </ul>
       </nav>
     </div>
