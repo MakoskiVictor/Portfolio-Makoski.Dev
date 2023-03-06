@@ -1,16 +1,15 @@
 .NavBar {
-    color: aqua;
     display: flex;
     justify-content: space-evenly;
 }
 
-ul {
+.ulNav {
     list-style: none;
     display: flex;
     column-gap: 50px;
 }
 
-img {
+.imgNav {
     width: 35px;
     height: 35px;
 }
@@ -41,18 +40,17 @@ img {
     border-radius: 20px;
 }
 
-li:hover {
+.liNav:hover {
     scale: 1.2;
     transition: 0.4s;
 }
-p:hover {
+.socialsLogo:hover {
+    scale: 1.2;
+    transition: 0.4s;
+}
+.pNav:hover {
     color: rgb(167, 13, 13);
     transition: 0.3s;
-}
-img:hover {
-    background-color: rgb(167, 13, 13);
-    transition: 0.3s;
-    border-radius: 20px;
 }
 
 
