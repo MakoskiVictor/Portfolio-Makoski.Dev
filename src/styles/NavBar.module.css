@@ -1,4 +1,12 @@
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
 .NavBar {
+    max-width: 1280px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -55,6 +63,9 @@
 
 
 @media (max-width: 720px) {
+    .NavBar {
+        max-width: 720px;
+    }
     .NavButtons {
         visibility: hidden;
         min-width: 0px;
