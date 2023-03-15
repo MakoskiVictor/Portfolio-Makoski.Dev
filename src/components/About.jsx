@@ -4,7 +4,7 @@ import about from '@/assets/text/about.svg'
 
 export function About () {
   return (
-    <section className={aboutStyles.section}>
+    <section className={aboutStyles.section} id='about'>
       <div className={aboutStyles.about}>
         <div>
           <img src={me} alt='Victor image' className={aboutStyles.image} />
