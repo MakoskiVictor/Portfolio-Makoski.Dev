@@ -15,13 +15,13 @@ export function NavBar () {
               <a href='#'><p className={NavBarStyle.pNav}>Home</p></a>
             </li>
             <li className={NavBarStyle.liNav}>
-              <a href='#'><p className={NavBarStyle.pNav}>About</p></a>
+              <a href='#about'><p className={NavBarStyle.pNav}>About</p></a>
             </li>
             <li className={NavBarStyle.liNav}>
-              <a href='#'><p className={NavBarStyle.pNav}>Portfolio</p></a>
+              <a href='#portfolio'><p className={NavBarStyle.pNav}>Portfolio</p></a>
             </li>
             <li className={NavBarStyle.liNav}>
-              <a href='#'><p className={NavBarStyle.pNav}>Contact</p></a>
+              <a href='#contact'><p className={NavBarStyle.pNav}>Contact</p></a>
             </li>
           </ul>
         </nav>
