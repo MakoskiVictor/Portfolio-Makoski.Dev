@@ -10,34 +10,42 @@ import postgres from '@/assets/skills/postgres.svg'
 export const SKILLS = [
   {
     name: 'Javascript',
-    image: javascript
+    image: javascript,
+    web: 'https://www.javascript.com/'
   },
   {
     name: 'CSS',
-    image: css
+    image: css,
+    web: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
   },
   {
     name: 'HTML',
-    image: html
+    image: html,
+    web: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
   },
   {
     name: 'react',
-    image: react
+    image: react,
+    web: 'https://reactjs.org/'
   },
   {
     name: 'redux',
-    image: redux
+    image: redux,
+    web: 'https://redux.js.org/'
   },
   {
     name: 'git',
-    image: git
+    image: git,
+    web: 'https://git-scm.com/'
   },
   {
     name: 'node',
-    image: node
+    image: node,
+    web: 'https://nodejs.org/en/'
   },
   {
     name: 'postgres',
-    image: postgres
+    image: postgres,
+    web: 'https://www.postgresql.org/'
   }
 ]
