@@ -3,7 +3,7 @@ import skillsStyle from '@/styles/Skills.module.css'
 
 export function Skills () {
   return (
-    <section className={skillsStyle.section}>
+    <section className={skillsStyle.section} id='skills'>
       <div className={skillsStyle.skills}>
         {
           SKILLS.map(skill => {
