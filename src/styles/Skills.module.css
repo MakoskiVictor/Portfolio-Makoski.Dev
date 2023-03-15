@@ -1,0 +1,55 @@
+.section {
+    background-color: #131419;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.skills {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.imageContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.image {
+    max-width: 60px;
+    max-height: 60px;
+    object-fit: fill;
+}
+
+.image:hover {
+    scale: 1.2;
+    transition: 0.4s;
+}
+
+@media (max-width: 720px) {
+    .skills {
+        max-width: 720px;
+        gap: 0px;
+    }
+
+    .imageContainer {
+        width: 30px;
+        height: 30px;
+        max-width: 30px;
+        max-height: 30px;
+    }
+    
+    .image {
+        max-width: 30px;
+        max-height: 30px;
+    }
+}
