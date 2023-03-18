@@ -6,6 +6,9 @@ import redux from '@/assets/skills/redux.svg'
 import git from '@/assets/skills/git.svg'
 import node from '@/assets/skills/node.svg'
 import postgres from '@/assets/skills/postgres.svg'
+import food from '@/assets/projects/food.jpg'
+import tech from '@/assets/projects/tech.jpg'
+import tateti from '@/assets/projects/tateti.jpg'
 
 export const SKILLS = [
   {
@@ -47,5 +50,29 @@ export const SKILLS = [
     name: 'postgres',
     image: postgres,
     web: 'https://www.postgresql.org/'
+  }
+]
+
+export const PROJECTS = [
+  {
+    name: 'Food Api',
+    url: 'https://food-api-front.vercel.app/',
+    description: 'A full stack application that allows users to search for food recipes and view their information.',
+    tech: 'Full Stack',
+    image: food
+  },
+  {
+    name: 'Techno Trade',
+    url: 'https://front-wheat-gamma.vercel.app/',
+    description: 'This PERN application allows users to create an account, login, and view their cart. It is based on the Final Project that my work group and I made for Henry bootcamp.',
+    tech: 'Full Stack',
+    image: tech
+  },
+  {
+    name: 'Ta-Te-Ti',
+    url: 'https://ta-te-ti-sigma.vercel.app/',
+    description: 'A game between two players: O and X, who alternately mark the spaces of a 3×3 grid.',
+    tech: 'Fron End',
+    image: tateti
   }
 ]
