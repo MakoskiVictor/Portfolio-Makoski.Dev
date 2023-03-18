@@ -8,16 +8,6 @@
     z-index: 1000;
 }
 
-.headerScrolled {
-    background-color: white;
-    position: sticky;
-    top: 0px;
-    display: flex;
-    justify-content: center;
-    height: 55px;
-    z-index: 1000;
-}
-
 .NavBar {
     max-width: 1280px;
     width: 100%;
@@ -57,7 +47,7 @@
 }
 
 .socials {
-    background-color: black;
+    background-color: transparent;
 }
 
 .socialsLogo {
