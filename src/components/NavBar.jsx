@@ -7,7 +7,7 @@ export function NavBar () {
     <header className={NavBarStyle.header}>
       <div id='NavBar' className={NavBarStyle.NavBar}>
         <nav className={NavBarStyle.makoski}>
-          <a href='NavBar'>Makoski Víctor</a>
+          <a href='#'>Makoski Víctor</a>
         </nav>
         <nav className={NavBarStyle.NavButtons}>
           <ul className={NavBarStyle.ulNav}>
