@@ -37,6 +37,7 @@ export function App () {
                       <p className={portfolioStyles.projectName}>{project.name}</p>
                       <p className={portfolioStyles.projectDescription}>{project.description}</p>
                     </div>
+                    <div className={portfolioStyles.linea} />
                   </a>
                 )
               })
