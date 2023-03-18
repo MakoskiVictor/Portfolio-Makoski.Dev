@@ -156,4 +156,11 @@
         max-width: 70%;
         margin: auto auto 20px auto;
     }
+    .linea {
+        border-top: 1px solid #26282e;
+        height: 2px;
+        max-width: 900px;
+        padding: 0;
+        margin: 20px auto 20px auto;
+    }
 }
