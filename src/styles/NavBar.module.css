@@ -1,7 +1,21 @@
 .header {
     background-color: black;
+    position: sticky;
+    top: 0px;
     display: flex;
     justify-content: center;
+    height: 55px;
+    z-index: 1000;
+}
+
+.headerScrolled {
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    z-index: 1000;
 }
 
 .NavBar {
@@ -14,6 +28,8 @@
 .ulNav {
     list-style: none;
     display: flex;
+    justify-items: center;
+    align-items: center;
     column-gap: 50px;
 }
 
@@ -33,12 +49,15 @@
 
 
 .NavButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 300px;
     max-width: 600px;
 }
 
 .socials {
-    background-color: transparent;
+    background-color: black;
 }
 
 .socialsLogo {
@@ -63,6 +82,9 @@
 
 
 @media (max-width: 720px) {
+    .header {
+        position: absolute;
+    }
     .NavBar {
         max-width: 720px;
     }
