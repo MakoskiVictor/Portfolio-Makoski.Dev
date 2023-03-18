@@ -1,0 +1,159 @@
+.section {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.portfolio {
+    max-width: 1280px;
+    gap: 100px;
+}
+
+/* Tittle */
+
+.titleContainer {
+    position: relative;
+}
+
+.imageText {
+    display: block;
+    margin: auto;  
+}
+
+
+.title {
+    font-family: 'Tilt Warp', cursive;
+    font-size: 35px;
+    position: absolute;
+    z-index: 100;
+    left: 30%;
+    top: 0px;
+}
+
+.descriptionContainer {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.description {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 25px;
+    color: #999;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Bottom */
+
+.bottom {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.cardContainer {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.imageContainer {
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 5px;
+}
+
+.projectImage {
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 5px;
+    object-fit: fill;
+}
+
+.projectName {
+    font-family: 'Tilt Warp', cursive;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+}
+
+.projectDescription {
+    color: #999;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 15px;
+}
+
+.cardContainer:hover {
+    scale: 1.1;
+    transition: 0.8s;
+}
+
+@media (max-width: 720px) {
+    .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .portfolio {
+        max-width: 720px;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .titleContainer {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        max-width: 720px;
+        margin: 0px auto;
+    }
+
+    .imageText {
+        display: none;
+        margin: auto;  
+    }
+    .title {
+        font-family: 'Tilt Warp', cursive;
+        font-size: 35px;
+        position: static;
+        display: block;
+    }
+    .descriptionContainer {
+        max-width: 400px;
+        margin: auto auto 15px auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .description {
+        font-size: 18px;
+        font-style: italic;
+        line-height: 20px;
+        color: #999;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .bottom {
+        display: block;
+        margin: auto;
+    }
+    .imageContainer {
+        margin: auto;
+    }
+    .projectDescription {
+        color: #999;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 15px;
+        max-width: 70%;
+        margin: auto auto 20px auto;
+    }
+}
