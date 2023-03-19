@@ -64,7 +64,7 @@ export const PROJECTS = [
   {
     name: 'Techno Trade',
     url: 'https://front-wheat-gamma.vercel.app/',
-    description: 'This PERN application allows users to create an account, login, and view their cart. It is based on the Final Project that my work group and I made for Henry bootcamp.',
+    description: 'This PERN application allows users to create an account, login, and view their cart.',
     tech: 'Full Stack',
     image: tech
   },
