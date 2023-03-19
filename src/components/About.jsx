@@ -24,7 +24,7 @@ export function About () {
           <div className={aboutStyles.bottom}>
             <ul className={aboutStyles.ul}>
               <li>
-                <p className={aboutStyles.description}>👩🏻‍💻Full Stack Developer with the ability to build and optimize end-user-oriented web sites and applications in a scalable and modularized manner</p>
+                <p className={aboutStyles.description}>👩🏻‍💻Full Stack Developer with the ability to build and optimize end-user-oriented web sites and applications in a scalable and modularized manner.</p>
               </li>
               <li>
                 <p className={aboutStyles.description}>📖✏️I love to investigate, solve problems, learn from others and teach, that is why in me you will find a developer with conflict resolution skills, willing to listen to ideas and contribute all my knowledge to achieve the proposed objectives.</p>
