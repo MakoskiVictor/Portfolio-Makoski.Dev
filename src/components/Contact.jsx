@@ -1,6 +1,7 @@
 import contact from '@/assets/text/contact.svg'
 import contactStyles from '@/styles/Contact.module.css'
 import { Messager } from '@/components/Messager.jsx'
+import { Location } from '@/components/Location.jsx'
 
 export function Contact () {
   return (
@@ -17,7 +18,10 @@ export function Contact () {
             </p>
           </div>
         </div>
-        <Messager />
+        <div className={contactStyles.bottom}>
+          <Location />
+          <Messager />
+        </div>
       </div>
     </section>
   )
