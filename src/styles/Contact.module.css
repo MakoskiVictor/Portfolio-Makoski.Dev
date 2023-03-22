@@ -8,6 +8,7 @@
 
 .portfolio {
     max-width: 1280px;
+    width: 100%;
     gap: 100px;
 }
 
@@ -47,6 +48,14 @@
     color: #999;
     flex-wrap: wrap;
     text-align: center;
+}
+
+.bottom {
+    max-width: 1280px;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    column-gap: 50px;
 }
 
 @media (max-width: 720px) {
