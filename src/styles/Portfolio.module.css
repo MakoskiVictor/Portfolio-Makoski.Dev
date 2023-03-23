@@ -71,8 +71,8 @@
 }
 
 .projectImage {
-    max-width: 300px;
-    max-height: 200px;
+    width: 300px;
+    height: 200px;
     border-radius: 5px;
     object-fit: fill;
 }
