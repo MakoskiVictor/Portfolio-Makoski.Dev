@@ -20,7 +20,9 @@
 
 .imageText {
     display: block;
-    margin: auto;  
+    margin: auto;
+    height: 70px;
+    width: 550px;
 }
 
 
