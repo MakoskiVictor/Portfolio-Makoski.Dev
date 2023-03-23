@@ -61,16 +61,16 @@
 }
 
 .button {
-    background-color: #872c3c;
-    border-color: #872c3c;
+    background-color: var(--red-color);
+    border-color: var(--red-color);
     width: 120px;
     height: 40px;
     float: inline-end;
 }
 
 .button:hover {
-    scale: 1.05;
-    transition: 0.4s;
+    background-color: rgba(208, 36, 36, 0.757);
+    transition: 0.8s;
 }
 
 @media (max-width: 720px) {
