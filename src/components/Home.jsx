@@ -22,7 +22,7 @@ export function Home () {
           </div>
         </div>
         <div className={HomeStyles.image}>
-          <img src={webDesigner} alt='web designer img' className={HomeStyles.imageHome} />
+          <img src={webDesigner} alt='web designer img' fetchpriority='high' className={HomeStyles.imageHome} />
         </div>
       </div>
     </section>
