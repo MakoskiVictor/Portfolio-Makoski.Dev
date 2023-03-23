@@ -1,13 +1,13 @@
 .form {
-    /* max-width: 550px; */
     width: 50%;
-    background-color: #872c3c;
+    margin-right: 10%;
 }
 
 .container {
     display: flex;
     align-content: center;
     justify-content: space-between;
+    column-gap: 10px;
     margin: 10px auto 10px auto;
 }
 
