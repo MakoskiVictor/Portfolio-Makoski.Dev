@@ -34,7 +34,7 @@
 }
 
 .redText {
-    color:  #872c3c;;
+    color:  var(--red-color);
     font-style: italic;
 }
 
