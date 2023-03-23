@@ -1,4 +1,4 @@
-import me from '@/assets/images/me.jpg'
+import me from '@/assets/images/me.webp'
 import aboutStyles from '@/styles/About.module.css'
 import about from '@/assets/text/about.svg'
 
