@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import messagerStyles from '@/styles/Messager.module.css'
 import emailjs from '@emailjs/browser'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 export function Messager () {
   const [name, setName] = useState('')
@@ -16,6 +18,13 @@ export function Messager () {
     console.log(name, email, subject, message)
   }
 
+  const resetInputs = () => {
+    setEmail(''),
+    setMessage(''),
+    setName(''),
+    setSubject('')
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
     emailjs.send('service_p29qgw1', 'template_wblizpm', {
@@ -25,7 +34,9 @@ export function Messager () {
       message
     }, 'x9ZTYKf99VqNZsdGN').then(res => {
       console.log(res)
-    })
+    }).then(() => {
+      resetInputs()
+    }).then(() => toast.dark('Message sended succesfully!'))
   }
 
   return (
@@ -36,21 +47,22 @@ export function Messager () {
             <input type='text' placeholder='Your name' name='name' onChange={(e) => handleChange(e)} value={name} className={messagerStyles.name} />
           </div>
           <div>
-            <input type='text' placeholder='Your email' name='email' onChange={(e) => handleChange(e)} className={messagerStyles.mail} />
+            <input type='text' placeholder='Your email' name='email' value={email} onChange={(e) => handleChange(e)} className={messagerStyles.mail} />
           </div>
         </div>
         <div>
           <div className={messagerStyles.container}>
-            <input type='text' placeholder='Subject' name='subject' onChange={(e) => handleChange(e)} className={messagerStyles.subject} />
+            <input type='text' placeholder='Subject' name='subject' value={subject} onChange={(e) => handleChange(e)} className={messagerStyles.subject} />
           </div>
           <div className={messagerStyles.container}>
-            <textarea cols='30' rows='10' placeholder='Your message' name='message' onChange={(e) => handleChange(e)} className={messagerStyles.message} />
+            <textarea cols='30' rows='10' placeholder='Your message' name='message' value={message} onChange={(e) => handleChange(e)} className={messagerStyles.message} />
           </div>
         </div>
       </div>
       <div className={messagerStyles.buttonContainer}>
         <button type='submit' className={messagerStyles.button}>Send</button>
       </div>
+      <ToastContainer role='alert' />
     </form>
   )
 }
