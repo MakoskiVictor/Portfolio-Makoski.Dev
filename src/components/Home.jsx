@@ -1,4 +1,4 @@
-import webDesigner from '@/assets/images/imgHero.jpg'
+import webDesigner from '@/assets/images/imgHero.webp'
 import HomeStyles from '@/styles/Home.module.css'
 
 export function Home () {
