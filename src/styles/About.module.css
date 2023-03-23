@@ -21,6 +21,8 @@
 
 .imageText {
     position: absolute;
+    height: 70px;
+    width: 550px;
 }
 
 
