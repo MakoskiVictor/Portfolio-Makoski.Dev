@@ -59,14 +59,14 @@ export const PROJECTS = [
     url: 'https://food-api-front.vercel.app/',
     description: 'A full stack application that allows users to search for food recipes and view their information.',
     tech: 'Full Stack',
-    image: "https://res.cloudinary.com/dl9pbe0eu/image/upload/v1679573840/food_2_uhty2k.webp"
+    image: "https://res.cloudinary.com/dl9pbe0eu/image/upload/q_auto:low/v1679574272/food_3_sxzcua.webp"
   },
   {
     name: 'Techno Trade',
     url: 'https://front-wheat-gamma.vercel.app/',
     description: 'This PERN application allows users to create an account, login, and view their cart.',
     tech: 'Full Stack',
-    image: "https://res.cloudinary.com/dl9pbe0eu/image/upload/v1679574036/tech_1_bckg0o.webp"
+    image: "https://res.cloudinary.com/dl9pbe0eu/image/upload/q_auto:low/v1679574379/tech_2_klmbw4.webp"
   },
   {
     name: 'Ta-Te-Ti',
