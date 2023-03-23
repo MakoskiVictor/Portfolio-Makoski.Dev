@@ -103,4 +103,8 @@
         flex-wrap: wrap;
         text-align: center;
     }
+    .bottom {
+        width: 90%;
+        display: block;
+    }
 }
