@@ -58,16 +58,15 @@
 }
 
 .button {
-    background-color: rgba(191, 33, 33, 0.757);
-    border-color: rgba(191, 33, 33, 0.757);
+    background-color: var(--red-color);
+    border-color: var(--red-color);
     width: 120px;
     height: 40px;
 }
 
 .button:hover {
-    scale: 1.1;
     background-color: rgba(208, 36, 36, 0.757);
-    transition: 0.4s;
+    transition: 0.8s;
 }
 
 @media (max-width: 720px) {
