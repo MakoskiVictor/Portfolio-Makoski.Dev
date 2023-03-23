@@ -59,7 +59,7 @@ export const PROJECTS = [
     url: 'https://food-api-front.vercel.app/',
     description: 'A full stack application that allows users to search for food recipes and view their information.',
     tech: 'Full Stack',
-    image: "https://res.cloudinary.com/dl9pbe0eu/image/upload/v1679572490/food_ujkqmv.webp"
+    image: "https://res.cloudinary.com/dl9pbe0eu/image/upload/v1679573840/food_2_uhty2k.webp"
   },
   {
     name: 'Techno Trade',
