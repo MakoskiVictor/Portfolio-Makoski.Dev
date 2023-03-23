@@ -6,9 +6,9 @@ import redux from '@/assets/skills/redux.svg'
 import git from '@/assets/skills/git.svg'
 import node from '@/assets/skills/node.svg'
 import postgres from '@/assets/skills/postgres.svg'
-/* import food from '@/assets/projects/food.jpg'
-import tech from '@/assets/projects/tech.jpg'
-import tateti from '@/assets/projects/tateti.jpg' */
+import food from '@/assets/projects/food.webp'
+import tech from '@/assets/projects/tech.webp'
+import tateti from '@/assets/projects/tateti.webp'
 
 export const SKILLS = [
   {
@@ -59,20 +59,20 @@ export const PROJECTS = [
     url: 'https://food-api-front.vercel.app/',
     description: 'A full stack application that allows users to search for food recipes and view their information.',
     tech: 'Full Stack',
-    image: "https://res.cloudinary.com/dl9pbe0eu/image/upload/q_auto:low/v1679574272/food_3_sxzcua.webp"
+    image: food
   },
   {
     name: 'Techno Trade',
     url: 'https://front-wheat-gamma.vercel.app/',
     description: 'This PERN application allows users to create an account, login, and view their cart.',
     tech: 'Full Stack',
-    image: "https://res.cloudinary.com/dl9pbe0eu/image/upload/q_auto:low/v1679574379/tech_2_klmbw4.webp"
+    image: tech
   },
   {
     name: 'Ta-Te-Ti',
     url: 'https://ta-te-ti-sigma.vercel.app/',
     description: 'A game between two players: O and X, who alternately mark the spaces of a 3×3 grid.',
     tech: 'Fron End',
-    image: "https://res.cloudinary.com/dl9pbe0eu/image/upload/v1679574039/teteti_2_jpxufn.webp"
+    image: tateti
   }
 ]
