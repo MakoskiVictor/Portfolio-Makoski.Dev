@@ -1,12 +1,45 @@
 .section {
-    width: 50%;
+    width: 40%;
+    margin-left: 10%;
 }
 
 .container {
     display: flex;
+    column-gap: 20px;
+}
+
+.imageContainer {
+    max-width: 45px;
+    max-height: 45px;
 }
 
 .image {
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.subTitleContainer {
+    margin-top: 0px;
+    padding-top: 1px;
+}
+
+.subTitle {
+    margin: 1px 0px 0px auto;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.whiteText {
+    color: #999;
+    font-style: italic;
+}
+
+.redText {
+    color:  #872c3c;;
+    font-style: italic;
+}
+
+@media (max-width: 720px) {
+    .section {
+        width: 90%;
+    }
 }
