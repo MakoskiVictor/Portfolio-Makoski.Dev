@@ -66,13 +66,13 @@ export const PROJECTS = [
     url: 'https://front-wheat-gamma.vercel.app/',
     description: 'This PERN application allows users to create an account, login, and view their cart.',
     tech: 'Full Stack',
-    image: "https://res.cloudinary.com/dl9pbe0eu/image/upload/v1679572557/tech_pjd6v4.webp"
+    image: "https://res.cloudinary.com/dl9pbe0eu/image/upload/v1679574036/tech_1_bckg0o.webp"
   },
   {
     name: 'Ta-Te-Ti',
     url: 'https://ta-te-ti-sigma.vercel.app/',
     description: 'A game between two players: O and X, who alternately mark the spaces of a 3×3 grid.',
     tech: 'Fron End',
-    image: "https://res.cloudinary.com/dl9pbe0eu/image/upload/v1679572560/teteti_ssdxtx.webp"
+    image: "https://res.cloudinary.com/dl9pbe0eu/image/upload/v1679574039/teteti_2_jpxufn.webp"
   }
 ]
