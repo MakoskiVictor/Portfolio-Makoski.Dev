@@ -6,23 +6,23 @@ export function Location () {
   return (
     <section className={locationStyles.section}>
       <div className={locationStyles.container}>
-        <div>
+        <div className={locationStyles.imageContainer}>
           <img src={Mail} alt='mail logo' className={locationStyles.image} />
         </div>
-        <div>
-          <h2>Have a question?</h2>
-          <p>I am here to help you.</p>
-          <p>Email me at makoski.ed@gmail.com</p>
+        <div className={locationStyles.subTitleContainer}>
+          <h2 className={locationStyles.subTitle}>Have a question?</h2>
+          <p className={locationStyles.whiteText}>I am here to help you.</p>
+          <p className={locationStyles.redText}>Email me at makoski.ed@gmail.com</p>
         </div>
       </div>
       <div className={locationStyles.container}>
-        <div>
+        <div className={locationStyles.imageContainer}>
           <img src={Maps} alt='maps logo' className={locationStyles.image} />
         </div>
-        <div>
-          <h2>Current Location</h2>
-          <p>Misiones, Argentina</p>
-          <p>Serving clients worldwide</p>
+        <div className={locationStyles.subTitleContainer}>
+          <h2 className={locationStyles.subTitle}>Current Location</h2>
+          <p className={locationStyles.whiteText}>Misiones, Argentina</p>
+          <p className={locationStyles.redText}>Serving clients worldwide</p>
         </div>
       </div>
     </section>
