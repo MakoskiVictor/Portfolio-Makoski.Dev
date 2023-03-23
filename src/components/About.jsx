@@ -7,12 +7,12 @@ export function About () {
     <section className={aboutStyles.section} id='about'>
       <div className={aboutStyles.about}>
         <div>
-          <img src={me} alt='Victor image' className={aboutStyles.image} />
+          <img src={me} alt='Victor image' fetchpriority='high' className={aboutStyles.image} />
         </div>
         <div>
           <div>
             <div className={aboutStyles.imageText}>
-              <img src={about} alt='about img' />
+              <img src={about} alt='about img' fetchpriority='high' />
             </div>
             <div>
               <p className={aboutStyles.name}>Makoski Víctor</p>
