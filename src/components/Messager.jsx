@@ -1,61 +1,117 @@
-import { useState } from 'react'
 import messagerStyles from '@/styles/Messager.module.css'
 import emailjs from '@emailjs/browser'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import { useForm } from 'react-hook-form'
 
 export function Messager () {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [subject, setSubject] = useState('')
-  const [message, setMessage] = useState('')
+  const {
+    register,
+    handleSubmit,
+    watch,
+    resetField,
+    formState: { errors }
+  } = useForm({
+    defaultValues: {
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    }
+  })
 
-  const handleChange = (e) => {
-    if (e.target.name === 'name') setName(e.target.value)
-    if (e.target.name === 'email') setEmail(e.target.value)
-    if (e.target.name === 'subject') setSubject(e.target.value)
-    if (e.target.name === 'message') setMessage(e.target.value)
-    console.log(name, email, subject, message)
-  }
+  const name = watch('name')
+  const email = watch('email')
+  const subject = watch('subject')
+  const message = watch('message')
 
   const resetInputs = () => {
-    setEmail(''),
-    setMessage(''),
-    setName(''),
-    setSubject('')
+    resetField('name')
+    resetField('email')
+    resetField('subject')
+    resetField('message')
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const onSubmit = (e) => {
     emailjs.send('service_p29qgw1', 'template_wblizpm', {
       from_name: name,
       from_subject: subject,
       from_mail: email,
       message
-    }, 'x9ZTYKf99VqNZsdGN').then(res => {
-      console.log(res)
-    }).then(() => {
+    }, 'x9ZTYKf99VqNZsdGN').then(() => {
       resetInputs()
     }).then(() => toast.dark('Message sended succesfully!'))
   }
 
   return (
-    <form onSubmit={handleSubmit} className={messagerStyles.form}>
+    <form onSubmit={handleSubmit(onSubmit)} className={messagerStyles.form}>
       <div>
         <div className={messagerStyles.container}>
+          {errors.name && <span>{errors.name.message}</span>}
           <div>
-            <input type='text' placeholder='Your name' name='name' onChange={(e) => handleChange(e)} value={name} className={messagerStyles.name} />
+            <input
+              type='text'
+              placeholder='Your name'
+              name='name'
+              className={messagerStyles.name}
+              {...register('name', {
+                required: { value: true, message: 'Name is required' },
+                minLength: {
+                  value: 3,
+                  message: 'Need to be at least 3 characters'
+                }
+              })}
+            />
           </div>
+          {errors.email && <span>{errors.email.message}</span>}
           <div>
-            <input type='text' placeholder='Your email' name='email' value={email} onChange={(e) => handleChange(e)} className={messagerStyles.mail} />
+            <input
+              type='text'
+              placeholder='Your email'
+              className={messagerStyles.mail}
+              {...register('email', {
+                required: { value: true, message: 'Email is required' },
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                  message: 'The mail is not correct'
+                }
+              })}
+            />
           </div>
         </div>
+        {errors.subject && <span>{errors.subject.message}</span>}
         <div>
           <div className={messagerStyles.container}>
-            <input type='text' placeholder='Subject' name='subject' value={subject} onChange={(e) => handleChange(e)} className={messagerStyles.subject} />
+            <input
+              type='text'
+              placeholder='Subject'
+              name='subject'
+              className={messagerStyles.subject}
+              {...register('subject', {
+                required: { value: true, message: 'Subject is required' },
+                minLength: {
+                  value: 3,
+                  message: 'Need to be at least 3 characters'
+                }
+              })}
+            />
           </div>
+          {errors.message && <span>{errors.message.message}</span>}
           <div className={messagerStyles.container}>
-            <textarea cols='30' rows='10' placeholder='Your message' name='message' value={message} onChange={(e) => handleChange(e)} className={messagerStyles.message} />
+            <textarea
+              cols='30'
+              rows='10'
+              placeholder='Your message'
+              name='message'
+              className={messagerStyles.message}
+              {...register('message', {
+                required: { value: true, message: 'Message is required' },
+                minLength: {
+                  value: 10,
+                  message: 'Need to be at least 10 characters'
+                }
+              })}
+            />
           </div>
         </div>
       </div>
