@@ -13,6 +13,7 @@
 
 .name {
     background-color: #1c1d24;
+    margin-top: 6px;
     width: 250px;
     height: 30px;
     border: none;
@@ -23,6 +24,7 @@
 
 .mail {
     background-color: #1c1d24;
+    margin-top: 6px;
     width: 250px;
     height: 30px;
     border: none;
@@ -37,7 +39,7 @@
     height: 30px;
     border: none;
     border-radius: 4px;
-    margin: 10px auto 15px auto;
+    margin: 0px auto 15px auto;
         font-style: italic;
         color: #999;
 }
@@ -49,9 +51,18 @@
     border: none;
     border-radius: 4px;
     resize: none;
-    margin: 5px auto 10px auto;
+    margin: 0px auto 10px auto;
         font-style: italic;
         color: #999;
+}
+
+.errors {
+    color: var(--red-color);
+    font-size: 14px;
+    font-style: italic;
+    padding: 1px;
+    height: 18px;
+    margin-bottom: 0px;
 }
 
 .buttonContainer {
