@@ -1,6 +1,7 @@
 .section {
     width: 40%;
     margin-left: 10%;
+    margin-top: 30px;
 }
 
 .container {
@@ -41,5 +42,6 @@
 @media (max-width: 720px) {
     .section {
         width: 90%;
+        margin-top: 10px;
     }
 }
