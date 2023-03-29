@@ -71,6 +71,14 @@
     justify-content: flex-end;
 }
 
+.sendingButton {
+    background-color: gray;
+    border-color: gray;
+    width: 120px;
+    height: 40px;
+    float: inline-end;
+}
+
 .button {
     background-color: var(--red-color);
     border-color: var(--red-color);
