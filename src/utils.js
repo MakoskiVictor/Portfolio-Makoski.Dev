@@ -10,6 +10,10 @@ import food from '@/assets/projects/food.webp'
 import tech from '@/assets/projects/tech.webp'
 import tateti from '@/assets/projects/tateti.webp'
 
+export const PUBLIC_KEY = 'x9ZTYKf99VqNZsdGN'
+export const SERVICE_ID = 'service_p29qgw1'
+export const TEMPLATE_ID = 'template_wblizpm'
+
 export const SKILLS = [
   {
     name: 'Javascript',
