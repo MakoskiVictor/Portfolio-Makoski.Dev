@@ -1,10 +1,9 @@
 import messagerStyles from '@/styles/Messager.module.css'
-import emailjs from '@emailjs/browser'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { useForm } from 'react-hook-form'
-import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '@/utils'
 import { useSending } from '@/hooks/useSending.jsx'
+import { sendMail } from '@/logic/sendMail.js'
 
 export function Messager () {
   const {
@@ -39,12 +38,7 @@ export function Messager () {
   const onSubmit = async () => {
     try {
       isSending()
-      emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-        from_name: name,
-        from_subject: subject,
-        from_mail: email,
-        message
-      }, PUBLIC_KEY).then(() => {
+      sendMail(name, subject, email, message).then(() => {
         resetInputs()
       }).then(() => toast.dark('Message sended succesfully!'))
         .then(() => isNotSending())
