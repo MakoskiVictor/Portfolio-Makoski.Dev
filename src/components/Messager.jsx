@@ -46,72 +46,84 @@ export function Messager () {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={messagerStyles.form}>
       <div>
+
         <div className={messagerStyles.container}>
-          {errors.name && <span>{errors.name.message}</span>}
           <div>
-            <input
-              type='text'
-              placeholder='Your name'
-              name='name'
-              className={messagerStyles.name}
-              {...register('name', {
-                required: { value: true, message: 'Name is required' },
-                minLength: {
-                  value: 3,
-                  message: 'Need to be at least 3 characters'
-                }
-              })}
-            />
+
+            {errors.name ? <span className={messagerStyles.errors}>{errors.name.message}</span> : <span className={messagerStyles.errors} />}
+            <div>
+              <input
+                type='text'
+                placeholder='Your name'
+                name='name'
+                className={messagerStyles.name}
+                {...register('name', {
+                  required: { value: true, message: 'Name is required' },
+                  minLength: {
+                    value: 3,
+                    message: 'Need to be at least 3 characters'
+                  }
+                })}
+              />
+
+            </div>
           </div>
-          {errors.email && <span>{errors.email.message}</span>}
           <div>
-            <input
-              type='text'
-              placeholder='Your email'
-              className={messagerStyles.mail}
-              {...register('email', {
-                required: { value: true, message: 'Email is required' },
-                pattern: {
-                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                  message: 'The mail is not correct'
-                }
-              })}
-            />
+            {errors.email ? <span className={messagerStyles.errors}>{errors.email.message}</span> : <span className={messagerStyles.errors} />}
+            <div>
+              <input
+                type='text'
+                placeholder='Your email'
+                className={messagerStyles.mail}
+                {...register('email', {
+                  required: { value: true, message: 'Email is required' },
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                    message: 'The mail is not correct'
+                  }
+                })}
+              />
+            </div>
           </div>
         </div>
-        {errors.subject && <span>{errors.subject.message}</span>}
         <div>
-          <div className={messagerStyles.container}>
-            <input
-              type='text'
-              placeholder='Subject'
-              name='subject'
-              className={messagerStyles.subject}
-              {...register('subject', {
-                required: { value: true, message: 'Subject is required' },
-                minLength: {
-                  value: 3,
-                  message: 'Need to be at least 3 characters'
-                }
-              })}
-            />
+          <div>
+
+            {errors.subject ? <span className={messagerStyles.errors}>{errors.subject.message}</span> : <span className={messagerStyles.errors} />}
+            <div className={messagerStyles.container}>
+              <input
+                type='text'
+                placeholder='Subject'
+                name='subject'
+                className={messagerStyles.subject}
+                {...register('subject', {
+                  required: { value: true, message: 'Subject is required' },
+                  minLength: {
+                    value: 3,
+                    message: 'Need to be at least 3 characters'
+                  }
+                })}
+              />
+            </div>
           </div>
-          {errors.message && <span>{errors.message.message}</span>}
-          <div className={messagerStyles.container}>
-            <textarea
-              cols='30'
-              rows='10'
-              placeholder='Your message'
-              name='message'
-              className={messagerStyles.message}
-              {...register('message', {
-                required: { value: true, message: 'Message is required' },
-                minLength: {
-                  value: 10,
-                  message: 'Need to be at least 10 characters'
-                }
-              })}
-            />
+          <div>
+            {errors.message ? <span className={messagerStyles.errors}>{errors.message.message}</span> : <span className={messagerStyles.errors} />}
+            <div className={messagerStyles.container}>
+              <textarea
+                cols='30'
+                rows='10'
+                placeholder='Your message'
+                name='message'
+                className={messagerStyles.message}
+                {...register('message', {
+                  required: { value: true, message: 'Message is required' },
+                  minLength: {
+                    value: 10,
+                    message: 'Need to be at least 10 characters'
+                  }
+                })}
+              />
+            </div>
           </div>
         </div>
       </div>
