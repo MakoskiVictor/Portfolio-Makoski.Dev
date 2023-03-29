@@ -11,7 +11,7 @@ export function Location () {
         </div>
         <div className={locationStyles.subTitleContainer}>
           <h2 className={locationStyles.subTitle}>Have a question?</h2>
-          <p className={locationStyles.whiteText}>I am here to help you.</p>
+          <p className={locationStyles.whiteText}>I'm here to help you.</p>
           <p className={locationStyles.redText}>Email me at makoski.ed@gmail.com</p>
         </div>
       </div>
