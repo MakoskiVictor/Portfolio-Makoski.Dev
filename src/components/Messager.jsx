@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { useForm } from 'react-hook-form'
 import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '@/utils'
-import { useState } from 'react'
+import { useSending } from '@/hooks/useSending.jsx'
 
 export function Messager () {
   const {
@@ -34,19 +34,11 @@ export function Messager () {
     resetField('message')
   }
 
-  const [sending, setSending] = useState(false)
-
-  const nowIsSending = () => {
-    setSending(true)
-  }
-
-  const nowIsNotSending = () => {
-    setSending(false)
-  }
+  const { sending, isSending, isNotSending } = useSending()
 
   const onSubmit = async () => {
     try {
-      nowIsSending()
+      isSending()
       emailjs.send(SERVICE_ID, TEMPLATE_ID, {
         from_name: name,
         from_subject: subject,
@@ -55,7 +47,7 @@ export function Messager () {
       }, PUBLIC_KEY).then(() => {
         resetInputs()
       }).then(() => toast.dark('Message sended succesfully!'))
-        .then(() => nowIsNotSending())
+        .then(() => isNotSending())
     } catch (error) {
       console.error(error)
     }
@@ -145,12 +137,13 @@ export function Messager () {
           </div>
         </div>
       </div>
+
       <div className={messagerStyles.buttonContainer}>
-        {/* <button type='submit' className={isSending ? messagerStyles.sendingButton : messagerStyles.button}>Send</button> */}
         {sending
           ? <button type='submit' className={messagerStyles.sendingButton}>Sending</button>
           : <button type='submit' className={messagerStyles.button}>Send</button>}
       </div>
+
       <ToastContainer role='alert' />
     </form>
   )
