@@ -6,9 +6,11 @@ import redux from '@/assets/skills/redux.svg'
 import git from '@/assets/skills/git.svg'
 import node from '@/assets/skills/node.svg'
 import postgres from '@/assets/skills/postgres.svg'
+import typescript from '@/assets/skills/typescript.svg'
 import food from '@/assets/projects/food.webp'
 import tech from '@/assets/projects/tech.webp'
 import tateti from '@/assets/projects/tateti.webp'
+import translate from '@/assets/projects/translate.webp'
 
 export const PUBLIC_KEY = 'x9ZTYKf99VqNZsdGN'
 export const SERVICE_ID = 'service_p29qgw1'
@@ -19,6 +21,11 @@ export const SKILLS = [
     name: 'Javascript',
     image: javascript,
     web: 'https://www.javascript.com/'
+  },
+  {
+    name: 'Typescript',
+    image: typescript,
+    web: 'https://www.typescriptlang.org/'
   },
   {
     name: 'CSS',
@@ -78,5 +85,12 @@ export const PROJECTS = [
     description: 'A game between two players: O and X, who alternately mark the spaces of a 3×3 grid.',
     tech: 'Fron End',
     image: tateti
+  },
+  {
+    name: 'Google Translate Clone',
+    url: 'https://google-translate-clonned.vercel.app',
+    description: 'A Google Translate clone made with Typescript. It has three available languages and an audio button.',
+    tech: 'Full Stack',
+    image: translate
   }
 ]
