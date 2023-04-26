@@ -10,9 +10,9 @@ export function Footer () {
         <div>
           <ul className={footerStyles.ul}>
             <li className={footerStyles.socialsLogo}>
-              <a href='https://github.com/MakoskiVictor'><img src={GithubLogo} alt='GitHub Logo' className={footerStyles.img} /></a>
+              <a target='_blank' href='https://github.com/MakoskiVictor'><img src={GithubLogo} alt='GitHub Logo' className={footerStyles.img} /></a>
             </li>
-            <li className={footerStyles.socialsLogo}><a href='https://www.linkedin.com/in/makoskidev/'><img src={LinkedinLogo} alt='LinkedIn Logo' className={footerStyles.img} /></a></li>
+            <li className={footerStyles.socialsLogo}><a target='_blank' href='https://www.linkedin.com/in/makoskidev/'><img src={LinkedinLogo} alt='LinkedIn Logo' className={footerStyles.img} /></a></li>
           </ul>
         </div>
       </div>

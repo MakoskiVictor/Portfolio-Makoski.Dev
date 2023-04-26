@@ -7,7 +7,7 @@ export function Card () {
       {
               PROJECTS.map(project => {
                 return (
-                  <a href={project.url} key={project.name} className={portfolioStyles.cardContainer}>
+                  <a target='_blank' href={project.url} key={project.name} className={portfolioStyles.cardContainer}>
                     <div className={portfolioStyles.imageContainer}>
                       <img src={project.image} alt={project.name} className={portfolioStyles.projectImage} />
                     </div>

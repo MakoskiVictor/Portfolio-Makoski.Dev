@@ -8,7 +8,7 @@ export function Skills () {
         {
           SKILLS.map(skill => {
             return (
-              <a href={skill.web} key={skill.name}>
+              <a target='_blank' href={skill.web} key={skill.name}>
                 <div className={skillsStyle.imageContainer}>
                   <img src={skill.image} alt={`${skill.name} icon`} className={skillsStyle.image} />
                 </div>
