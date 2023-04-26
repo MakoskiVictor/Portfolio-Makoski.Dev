@@ -28,9 +28,9 @@ export function NavBar () {
         <nav className={NavBarStyle.socials}>
           <ul className={NavBarStyle.ulNav}>
             <li className={NavBarStyle.socialsLogo}>
-              <a target='_blank' href='https://github.com/MakoskiVictor'><img src={GithubLogo} alt='GitHub Logo' className={NavBarStyle.imgNav} /></a>
+              <a target='_blank' rel='noreferrer' href='https://github.com/MakoskiVictor'><img src={GithubLogo} alt='GitHub Logo' className={NavBarStyle.imgNav} /></a>
             </li>
-            <li className={NavBarStyle.socialsLogo}><a target='_blank' href='https://www.linkedin.com/in/makoskidev/'><img src={LinkedinLogo} alt='LinkedIn Logo' className={NavBarStyle.imgNav} /></a></li>
+            <li className={NavBarStyle.socialsLogo}><a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/makoskidev/'><img src={LinkedinLogo} alt='LinkedIn Logo' className={NavBarStyle.imgNav} /></a></li>
           </ul>
         </nav>
       </div>
