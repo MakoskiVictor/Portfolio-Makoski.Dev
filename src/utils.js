@@ -7,7 +7,7 @@ import git from '@/assets/skills/git.svg'
 import node from '@/assets/skills/node.svg'
 import postgres from '@/assets/skills/postgres.svg'
 import typescript from '@/assets/skills/typescript.svg'
-import food from '@/assets/projects/food.webp'
+/* import food from '@/assets/projects/food.webp' */
 import tech from '@/assets/projects/tech.webp'
 import tateti from '@/assets/projects/tateti.webp'
 import translate from '@/assets/projects/translate.webp'
@@ -65,13 +65,13 @@ export const SKILLS = [
 ]
 
 export const PROJECTS = [
-  {
+  /* {
     name: 'Food Api',
     url: 'https://food-api-front.vercel.app/',
     description: 'A full stack application that allows users to search for food recipes and view their information.',
     tech: 'Full Stack',
     image: food
-  },
+  }, */
   {
     name: 'Techno Trade',
     url: 'https://front-wheat-gamma.vercel.app/',
