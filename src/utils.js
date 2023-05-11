@@ -7,7 +7,8 @@ import git from '@/assets/skills/git.svg'
 import node from '@/assets/skills/node.svg'
 import postgres from '@/assets/skills/postgres.svg'
 import typescript from '@/assets/skills/typescript.svg'
-/* import food from '@/assets/projects/food.webp' */
+import reactNative from '@/assets/skills/react-native.svg'
+import snake from '@/assets/projects/SnakeApp.webp'
 import tech from '@/assets/projects/tech.webp'
 import tateti from '@/assets/projects/tateti.webp'
 import translate from '@/assets/projects/translate.webp'
@@ -61,17 +62,22 @@ export const SKILLS = [
     name: 'postgres',
     image: postgres,
     web: 'https://www.postgresql.org/'
+  },
+  {
+    name: 'React Native',
+    image: reactNative,
+    web: 'https://reactnative.dev/'
   }
 ]
 
 export const PROJECTS = [
-  /* {
-    name: 'Food Api',
-    url: 'https://food-api-front.vercel.app/',
-    description: 'A full stack application that allows users to search for food recipes and view their information.',
-    tech: 'Full Stack',
-    image: food
-  }, */
+  {
+    name: 'Snake App',
+    url: 'https://expo.dev/@makoski/SnakeApp?serviceType=classic&distribution=expo-go',
+    description: 'A React Native and Typescript app where you got a snake and need to give it fruits. WARNING: needs Expo App to run it',
+    tech: 'React Native',
+    image: snake
+  },
   {
     name: 'Techno Trade',
     url: 'https://front-wheat-gamma.vercel.app/',
