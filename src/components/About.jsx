@@ -7,7 +7,7 @@ export function About () {
     <section className={aboutStyles.section} id='about'>
       <div className={aboutStyles.about}>
         <div>
-          <img src={me} alt='Victor image' fetchpriority='high' className={aboutStyles.image} />
+          <img src={me} alt='Victor image' fetchpriority='high' width='350px' height='350px' className={aboutStyles.image} />
         </div>
         <div>
           <div>
