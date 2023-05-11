@@ -30,7 +30,7 @@ export function About () {
                 <p className={aboutStyles.description}>📖✏️I love to investigate, solve problems, learn from others and teach, that is why in me you will find a developer with conflict resolution skills, willing to listen to ideas and contribute all my knowledge to achieve the proposed objectives.</p>
               </li>
               <li>
-                <p className={aboutStyles.description}>I have experience in JavaScript language, HTML, CSS and also in technologies like React, Node, Express, Sequelize, PostgreSQL, Git.</p>
+                <p className={aboutStyles.description}>I have experience in JavaScript language, HTML, CSS and also in technologies like React, React Native, Node, Express, PostgreSQL, Git.</p>
               </li>
             </ul>
           </div>
