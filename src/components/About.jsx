@@ -35,7 +35,7 @@ export function About () {
             </ul>
           </div>
           <div className={aboutStyles.buttonContainer}>
-            <button className={aboutStyles.button}><a href='#contact'>Contact</a></button>
+            <a href='#contact'><button className={aboutStyles.button}>Contact</button></a>
           </div>
         </div>
       </div>
