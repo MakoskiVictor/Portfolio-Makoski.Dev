@@ -18,7 +18,7 @@ export function Home () {
             </p>
           </div>
           <div className={HomeStyles.buttonContainer}>
-            <button className={HomeStyles.button}><a href='#contact'>Work with me</a></button>
+            <a href='#contact'><button className={HomeStyles.button}>Work with me</button></a>
           </div>
         </div>
         <div className={HomeStyles.image}>
