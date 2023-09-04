@@ -1,8 +1,8 @@
 import javascript from '@/assets/skills/javascript.svg'
 import css from '@/assets/skills/css.svg'
-import html from '@/assets/skills/html.svg'
+import mongodb from '@/assets/skills/mongodb.svg'
 import react from '@/assets/skills/react.svg'
-import redux from '@/assets/skills/redux.svg'
+import docker from '@/assets/skills/docker.svg'
 import git from '@/assets/skills/git.svg'
 import node from '@/assets/skills/node.svg'
 import postgres from '@/assets/skills/postgres.svg'
@@ -12,6 +12,7 @@ import snake from '@/assets/projects/SnakeApp.webp'
 import tech from '@/assets/projects/tech.webp'
 import tateti from '@/assets/projects/tateti.webp'
 import translate from '@/assets/projects/translate.webp'
+import starWars from '@/assets/projects/starWars.webp'
 
 export const PUBLIC_KEY = 'x9ZTYKf99VqNZsdGN'
 export const SERVICE_ID = 'service_p29qgw1'
@@ -34,19 +35,14 @@ export const SKILLS = [
     web: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
   },
   {
-    name: 'HTML',
-    image: html,
-    web: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
-  },
-  {
     name: 'react',
     image: react,
     web: 'https://reactjs.org/'
   },
   {
-    name: 'redux',
-    image: redux,
-    web: 'https://redux.js.org/'
+    name: 'docker',
+    image: docker,
+    web: 'https://www.docker.com/'
   },
   {
     name: 'git',
@@ -64,6 +60,11 @@ export const SKILLS = [
     web: 'https://www.postgresql.org/'
   },
   {
+    name: 'mongodb',
+    image: mongodb,
+    web: 'https://www.mongodb.com/es'
+  },
+  {
     name: 'React Native',
     image: reactNative,
     web: 'https://reactnative.dev/'
@@ -72,11 +73,11 @@ export const SKILLS = [
 
 export const PROJECTS = [
   {
-    name: 'Snake App',
-    url: 'https://expo.dev/@makoski/SnakeApp?serviceType=classic&distribution=expo-go',
-    description: 'A React Native and Typescript app where you got a snake and need to give it fruits. WARNING: needs Expo App to run it',
-    tech: 'React Native',
-    image: snake
+    name: 'Star Wars Microservices',
+    url: 'https://star-wars-microservices.vercel.app/',
+    description: 'REST Api with Microservices Architecture, MongoDB and Docker. Deployed on Google Cloud ',
+    tech: 'Back End',
+    image: starWars
   },
   {
     name: 'Techno Trade',
@@ -98,5 +99,12 @@ export const PROJECTS = [
     description: 'A Google Translate clone made with Typescript. It has three available languages and an audio button.',
     tech: 'Full Stack',
     image: translate
+  },
+  {
+    name: 'Snake App',
+    url: 'https://expo.dev/@makoski/SnakeApp?serviceType=classic&distribution=expo-go',
+    description: 'A React Native and Typescript app where you got a snake and need to give it fruits. WARNING: needs Expo App to run it',
+    tech: 'React Native',
+    image: snake
   }
 ]
