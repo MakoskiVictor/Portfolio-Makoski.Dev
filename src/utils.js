@@ -1,4 +1,5 @@
-import javascript from '@/assets/skills/javascript.svg'
+/* import javascript from '@/assets/skills/javascript.svg' */
+import Angular from '@/assets/skills/Angular.svg'
 import css from '@/assets/skills/css.svg'
 import mongodb from '@/assets/skills/mongodb.svg'
 import react from '@/assets/skills/react.svg'
@@ -13,17 +14,18 @@ import tech from '@/assets/projects/tech.webp'
 import tateti from '@/assets/projects/tateti.webp'
 import translate from '@/assets/projects/translate.webp'
 import starWars from '@/assets/projects/starWars.webp'
+import metropolitan from '@/assets/projects/metropolitan.webp'
 
 export const PUBLIC_KEY = 'x9ZTYKf99VqNZsdGN'
 export const SERVICE_ID = 'service_p29qgw1'
 export const TEMPLATE_ID = 'template_wblizpm'
 
 export const SKILLS = [
-  {
+  /* {
     name: 'Javascript',
     image: javascript,
     web: 'https://www.javascript.com/'
-  },
+  }, */
   {
     name: 'Typescript',
     image: typescript,
@@ -33,6 +35,11 @@ export const SKILLS = [
     name: 'CSS',
     image: css,
     web: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+  },
+  {
+    name: 'Angular',
+    image: Angular,
+    web: 'https://angular.io/'
   },
   {
     name: 'react',
@@ -72,6 +79,15 @@ export const SKILLS = [
 ]
 
 export const PROJECTS = [
+  {
+    name: 'Club Metropolitan',
+    url: 'https://metropolitan-eta.vercel.app/',
+    description: `-- ON GOING PROJECT -- An Angular and Java project that involves the development of a gym portal, 
+    designed to provide customers with a comprehensive experience. From detailed information about the gym, easy registration options, 
+    to the convenience of paying fees directly through the portal.`,
+    tech: 'Full Stack',
+    image: metropolitan
+  },
   {
     name: 'Star Wars Microservices',
     url: 'https://star-wars-microservices.vercel.app/',
