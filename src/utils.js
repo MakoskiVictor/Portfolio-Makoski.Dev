@@ -81,15 +81,15 @@ export const SKILLS = [
 ];
 
 export const PROJECTS = [
-  {
-    name: "Club Metropolitan",
-    url: "https://metropolitan-eta.vercel.app/",
-    description: `-- ON GOING PROJECT -- An Angular and Java project that involves the development of a gym portal, 
-    designed to provide customers with a comprehensive experience. From detailed information about the gym, easy registration options, 
-    to the convenience of paying fees directly through the portal.`,
-    tech: "Full Stack",
-    image: metropolitan,
-  },
+  // {
+  //   name: "Club Metropolitan",
+  //   url: "https://metropolitan-eta.vercel.app/",
+  //   description: `-- ON GOING PROJECT -- An Angular and NestJs project that involves the development of a gym portal, 
+  //   designed to provide customers with a comprehensive experience. From detailed information about the gym, easy registration options, 
+  //   to the convenience of paying fees directly through the portal.`,
+  //   tech: "Full Stack",
+  //   image: metropolitan,
+  // },
   {
     name: "RecipeHub-API",
     url: "https://recipe-hub-api.vercel.app/",
