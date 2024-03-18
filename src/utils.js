@@ -14,9 +14,10 @@ import tech from "@/assets/projects/tech.webp";
 import tateti from "@/assets/projects/tateti.webp";
 import translate from "@/assets/projects/translate.webp";
 import starWars from "@/assets/projects/starWars.webp";
-import metropolitan from "@/assets/projects/metropolitan.webp";
+//import metropolitan from "@/assets/projects/metropolitan.webp";
 import nest from "@/assets/skills/NestJS.svg";
 import recipehub from "@/assets/projects/recipehub.webp";
+import NestRegister from "@/assets/projects/NestRegister.webp"
 
 export const PUBLIC_KEY = "x9ZTYKf99VqNZsdGN";
 export const SERVICE_ID = "service_p29qgw1";
@@ -90,6 +91,14 @@ export const PROJECTS = [
   //   tech: "Full Stack",
   //   image: metropolitan,
   // },
+  {
+    name: "RecipeHub-API",
+    url: "https://metropolitan-k7ev.vercel.app/api/v1/",
+    description:
+      "Register and Login System. Made it with NestJs, TypeScript, TypeORM, JWT and PostgreSQL.",
+    tech: "Back End",
+    image: NestRegister,
+  },
   {
     name: "RecipeHub-API",
     url: "https://recipe-hub-api.vercel.app/",
