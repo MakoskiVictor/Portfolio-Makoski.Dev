@@ -92,7 +92,7 @@ export const PROJECTS = [
   //   image: metropolitan,
   // },
   {
-    name: "RecipeHub-API",
+    name: "Register System",
     url: "https://metropolitan-k7ev.vercel.app/api/v1/",
     description:
       "Register and Login System. Made it with NestJs, TypeScript, TypeORM, JWT and PostgreSQL.",
