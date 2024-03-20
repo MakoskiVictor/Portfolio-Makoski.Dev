@@ -75,11 +75,11 @@ export const SKILLS = [
     image: mongodb,
     web: "https://www.mongodb.com/es",
   },
-  {
-    name: "React Native",
-    image: reactNative,
-    web: "https://reactnative.dev/",
-  },
+  // {
+  //   name: "React Native",
+  //   image: reactNative,
+  //   web: "https://reactnative.dev/",
+  // },
 ];
 
 export const PROJECTS = [
