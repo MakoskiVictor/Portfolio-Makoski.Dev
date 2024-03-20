@@ -31,7 +31,7 @@ export function About() {
             <ul className={aboutStyles.ul}>
               <li>
                 <p className={aboutStyles.description}>
-                👩🏻‍💻 Full Stack Developer with a passion for building and optimizing end-user-oriented
+                👩🏻‍💻 Full Stack Developer, specialized in BackEnd, with a passion for building and optimizing end-user-oriented
                  web applications in a scalable and modularized manner.
                 </p>
               </li>
