@@ -31,25 +31,21 @@ export function About() {
             <ul className={aboutStyles.ul}>
               <li>
                 <p className={aboutStyles.description}>
-                  👩🏻‍💻Full Stack Developer with the ability to build and optimize
-                  end-user-oriented web sites and applications in a scalable and
-                  modularized manner.
+                👩🏻‍💻 Full Stack Developer with a passion for building and optimizing end-user-oriented
+                 web applications in a scalable and modularized manner.
                 </p>
               </li>
               <li>
                 <p className={aboutStyles.description}>
-                  📖✏️I love to investigate, solve problems, learn from others
-                  and teach, that is why in me you will find a developer with
-                  conflict resolution skills, willing to listen to ideas and
-                  contribute all my knowledge to achieve the proposed
-                  objectives.
+                📖✏️ I am an avid investigator and problem-solver, always eager to learn from others and
+                 share my knowledge. With strong conflict resolution skills, I thrive in collaborative 
+                 environments where I can contribute my expertise to achieve our goals.
                 </p>
               </li>
               <li>
                 <p className={aboutStyles.description}>
-                  I have experience in JavaScript language, HTML, CSS and also
-                  in technologies like React, React Native, Node with Express
-                  and NestJs, PostgreSQL, MongoDB, Git.
+                Experience: Proficient in TypeScript, HTML, and CSS, with hands-on experience in 
+                React, AstroJs, Node.js (Express and NestJS), PostgreSQL, MongoDB, and Git.
                 </p>
               </li>
             </ul>
