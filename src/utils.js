@@ -1,6 +1,6 @@
 /* import javascript from '@/assets/skills/javascript.svg' */
-import Angular from "@/assets/skills/Angular.svg";
-import css from "@/assets/skills/css.svg";
+import Astro from "@/assets/skills/astrojs.svg";
+import tailwind from "@/assets/skills/tailwind.svg";
 import mongodb from "@/assets/skills/mongodb.svg";
 import react from "@/assets/skills/react.svg";
 import docker from "@/assets/skills/docker.svg";
@@ -24,11 +24,7 @@ export const SERVICE_ID = "service_p29qgw1";
 export const TEMPLATE_ID = "template_wblizpm";
 
 export const SKILLS = [
-  /* {
-    name: 'Javascript',
-    image: javascript,
-    web: 'https://www.javascript.com/'
-  }, */
+  
   {
     name: "Typescript",
     image: typescript,
@@ -40,15 +36,20 @@ export const SKILLS = [
     web: "https://nestjs.com/",
   },
   {
-    name: "Angular",
-    image: Angular,
-    web: "https://angular.io/",
+    name: "AstroJs",
+    image: Astro,
+    web: "https://astro.build/",
   },
   {
     name: "react",
     image: react,
     web: "https://reactjs.org/",
   },
+  {
+    name: 'Tailwind',
+    image: tailwind,
+    web: 'https://tailwindcss.com/'
+  }, 
   {
     name: "docker",
     image: docker,
